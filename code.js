@@ -1,3 +1,5 @@
+let temps;
+
 window.onload = function() {
 
     document.getElementById("bt1").style.display = "block";
@@ -18,7 +20,7 @@ window.onload = function() {
     /** for (z=0; z<5; z++) { */
     /**     imgMouse[z].addEventListener('onmouseover',defParentImg) */
     /** } */
-    let temps = setTimeout(moveright, 3000);
+     
     let img01 = document.getElementById('carousel');
     img01.onmouseover = function() {
         /** on arrête le défilement */
@@ -39,6 +41,8 @@ window.onload = function() {
     dt4.addEventListener('click', modeDot);
     let dt5 = document.getElementById('dot5');
     dt5.addEventListener('click', modeDot);
+
+    temps = setTimeout(moveright, 3000);
 }
 
 function modeDot() {
